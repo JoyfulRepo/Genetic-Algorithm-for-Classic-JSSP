@@ -71,7 +71,7 @@ class Experiment:
         self.experiment_result_plot_path = f'{self.result_path}/Plot'
 
 
-    def start_experiment(self, print_out=False, save_history=True):
+    def start_experiment(self, print_out=False, save_history=False):
         for exp_num, file in enumerate(natsort.natsorted(self.jssp_info_experimental_files)):
             print(f'>>>>>>>>>>>>>>>>>>>>Test {exp_num + 1:03}<<<<<<<<<<<<<<<<<<<<')
 
