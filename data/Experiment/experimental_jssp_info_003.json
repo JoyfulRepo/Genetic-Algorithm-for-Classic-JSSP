@@ -1,0 +1,68 @@
+{
+    "num_jobs": 3,
+    "num_task": 6,
+    "max_task_per_job": 3,
+    "num_machines": 3,
+    "max_hour_per_task": 6,
+    "jobs": [
+        {
+            "job_id": 1,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 6,
+                    "task_deadline": 11
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 7
+                }
+            ]
+        },
+        {
+            "job_id": 2,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 3
+                }
+            ]
+        },
+        {
+            "job_id": 3,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 0,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 9
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 0,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 13
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 17
+                }
+            ]
+        }
+    ]
+}

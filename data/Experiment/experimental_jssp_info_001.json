@@ -1,0 +1,51 @@
+{
+    "num_jobs": 2,
+    "num_task": 4,
+    "max_task_per_job": 2,
+    "num_machines": 2,
+    "max_hour_per_task": 6,
+    "jobs": [
+        {
+            "job_id": 1,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 6,
+                    "task_deadline": 9
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 0,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 10
+                }
+            ]
+        },
+        {
+            "job_id": 2,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 9
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 0,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 8
+                }
+            ]
+        }
+    ]
+}

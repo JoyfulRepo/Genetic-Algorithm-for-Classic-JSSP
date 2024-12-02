@@ -1,0 +1,101 @@
+{
+    "num_jobs": 5,
+    "num_task": 9,
+    "max_task_per_job": 4,
+    "num_machines": 4,
+    "max_hour_per_task": 5,
+    "jobs": [
+        {
+            "job_id": 1,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 4
+                }
+            ]
+        },
+        {
+            "job_id": 2,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 10
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 9
+                }
+            ]
+        },
+        {
+            "job_id": 3,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 14
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 2,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 15
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 7
+                }
+            ]
+        },
+        {
+            "job_id": 4,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 4
+                }
+            ]
+        },
+        {
+            "job_id": 5,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 5
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 4,
+                    "task_deadline": 10
+                }
+            ]
+        }
+    ]
+}

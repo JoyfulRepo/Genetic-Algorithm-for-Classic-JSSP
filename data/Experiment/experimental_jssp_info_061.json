@@ -1,0 +1,617 @@
+{
+    "num_jobs": 20,
+    "num_task": 64,
+    "max_task_per_job": 6,
+    "num_machines": 7,
+    "max_hour_per_task": 5,
+    "jobs": [
+        {
+            "job_id": 1,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 3
+                }
+            ]
+        },
+        {
+            "job_id": 2,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 4,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 11
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 20
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 13
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 3,
+                    "dependencies": [
+                        "T2"
+                    ],
+                    "task_duration": 2,
+                    "task_deadline": 17
+                }
+            ]
+        },
+        {
+            "job_id": 3,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 0,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 17
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 0,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 13
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 17
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 0,
+                    "dependencies": [
+                        "T2",
+                        "T1"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 10
+                }
+            ]
+        },
+        {
+            "job_id": 4,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 16
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 5,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 15
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 11
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 14
+                }
+            ]
+        },
+        {
+            "job_id": 5,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 9
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 5,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 7
+                }
+            ]
+        },
+        {
+            "job_id": 6,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 12
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 4,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 15
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T2"
+                    ],
+                    "task_duration": 4,
+                    "task_deadline": 15
+                }
+            ]
+        },
+        {
+            "job_id": 7,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 4,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 5
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 2,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 6
+                }
+            ]
+        },
+        {
+            "job_id": 8,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 19
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 5,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 18
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 3,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 20
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 15
+                }
+            ]
+        },
+        {
+            "job_id": 9,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 9
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 4,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 10
+                }
+            ]
+        },
+        {
+            "job_id": 10,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 17
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 0,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 20
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 4,
+                    "task_deadline": 27
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 4,
+                    "dependencies": [
+                        "T2"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 25
+                },
+                {
+                    "task_id": "T5",
+                    "machine_id": 2,
+                    "dependencies": [
+                        "T2",
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 22
+                },
+                {
+                    "task_id": "T6",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 30
+                }
+            ]
+        },
+        {
+            "job_id": 11,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 18
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 3,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 19
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 6,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 2,
+                    "task_deadline": 14
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T2",
+                        "T1"
+                    ],
+                    "task_duration": 2,
+                    "task_deadline": 12
+                }
+            ]
+        },
+        {
+            "job_id": 12,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 9
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 0,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 4,
+                    "task_deadline": 7
+                }
+            ]
+        },
+        {
+            "job_id": 13,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 2
+                }
+            ]
+        },
+        {
+            "job_id": 14,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 5,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 10
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 4,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 20
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 10
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T2",
+                        "T3"
+                    ],
+                    "task_duration": 2,
+                    "task_deadline": 15
+                }
+            ]
+        },
+        {
+            "job_id": 15,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 0,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 17
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 3,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 10
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 4,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 14
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 0,
+                    "dependencies": [
+                        "T2",
+                        "T1"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 15
+                }
+            ]
+        },
+        {
+            "job_id": 16,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 1,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 3
+                }
+            ]
+        },
+        {
+            "job_id": 17,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 3,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 27
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 4,
+                    "task_deadline": 23
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 1,
+                    "dependencies": [
+                        "T2",
+                        "T1"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 19
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 6,
+                    "dependencies": [
+                        "T1",
+                        "T3"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 20
+                },
+                {
+                    "task_id": "T5",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 27
+                },
+                {
+                    "task_id": "T6",
+                    "machine_id": 4,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 21
+                }
+            ]
+        },
+        {
+            "job_id": 18,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 20
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 4,
+                    "dependencies": [],
+                    "task_duration": 2,
+                    "task_deadline": 22
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 6,
+                    "dependencies": [
+                        "T2",
+                        "T1"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 22
+                },
+                {
+                    "task_id": "T4",
+                    "machine_id": 6,
+                    "dependencies": [
+                        "T2"
+                    ],
+                    "task_duration": 1,
+                    "task_deadline": 23
+                },
+                {
+                    "task_id": "T5",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 15
+                }
+            ]
+        },
+        {
+            "job_id": 19,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 3,
+                    "task_deadline": 5
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 2,
+                    "dependencies": [],
+                    "task_duration": 5,
+                    "task_deadline": 6
+                }
+            ]
+        },
+        {
+            "job_id": 20,
+            "tasks": [
+                {
+                    "task_id": "T1",
+                    "machine_id": 6,
+                    "dependencies": [],
+                    "task_duration": 1,
+                    "task_deadline": 15
+                },
+                {
+                    "task_id": "T2",
+                    "machine_id": 5,
+                    "dependencies": [
+                        "T1"
+                    ],
+                    "task_duration": 3,
+                    "task_deadline": 12
+                },
+                {
+                    "task_id": "T3",
+                    "machine_id": 5,
+                    "dependencies": [
+                        "T2"
+                    ],
+                    "task_duration": 5,
+                    "task_deadline": 13
+                }
+            ]
+        }
+    ]
+}
